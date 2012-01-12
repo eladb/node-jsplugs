@@ -19,7 +19,7 @@ Loads plugs into the jsplugs object.
 ```js
 require('/path/to/plugs')
 require('/path/to/plugs/myplug.js')
-require([ 'dir1', 'dir2', ... ])
+require([ 'dir1', 'dir2', ... ], ...)
 require('dir1', 'myplug2.js', ...)
 ```
 
@@ -38,12 +38,17 @@ it supports ordering using ordinal prefix.
 
 Given the directory structure:
 
- * ./middleware
- * ./middleware/050.cors.js
- * ./middleware/100.auth.js
- * ./middleware/120.log.js
- * ./middleware/200.app.js
- * ./middleware/999.errors.js
+```bash
+$ ls
+./middleware
+./middleware/050.cors.js
+./middleware/100.auth.js
+./middleware/120.log.js
+./middleware/200.app.js
+./middleware/999.errors.js
+```
+
+This loads all the plugs under `./middleware` into the express server, in-order.
 
 ```js
 var express = require('express');
