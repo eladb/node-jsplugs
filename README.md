@@ -36,15 +36,12 @@ it supports ordering using ordinal prefix.
 
 Given the directory structure:
 
-```
-./
-./middleware
-./middleware/050.cors.js
-./middleware/100.auth.js
-./middleware/120.log.js
-./middleware/200.app.js
-./middleware/999.errors.js
-```
+ * ./middleware
+ * ./middleware/050.cors.js
+ * ./middleware/100.auth.js
+ * ./middleware/120.log.js
+ * ./middleware/200.app.js
+ * ./middleware/999.errors.js
 
 ```js
 var express = require('express');
