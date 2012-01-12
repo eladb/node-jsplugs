@@ -1,4 +1,6 @@
-# jsplugs
+# jsplugs [![Build Status](https://secure.travis-ci.org/eladb/node-jsplugs.png)](http://travis-ci.org/eladb/node-jsplugs)
+
+Dead-stupid init.d-like plugin manager for node.js.
 
 ```bash
 $ npm install jsplugs
