@@ -28,7 +28,7 @@ Returns `jsplugs.plugs`.
 ### jsplugs.plugs ###
 
 Returns a hash of all the plugs loaded, in order. Each plug has an ordinal. Ordinals are a numeric prefix 
-to plug filenames (e.g. the ordinal of `010.xyz.js` is 010). Files without an ordinal are always last.
+to plug filenames (e.g. the ordinal of `010.xyz.js` is 010). Files without an ordinal are always first.
 
 
 ## Using as Express Middleware ##
@@ -71,17 +71,19 @@ Running:
 ```bash
 $ node express.js &
 [2] 65761
+using cors
 using auth
 using log
 using app
 using errors
-using cors
 
 $ curl http://localhost:8080
+in cors
 in auth
 in log
 in app
 in errors
+500 Server Error
 ```
 
 ## License
